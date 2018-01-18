@@ -25,8 +25,7 @@ function findBy(array, findFn) {
     if (findFn(array[i])) {
       return array[i];
     } else {
-      array[i] = changeValue;
+      return null;
     }
   }
-  return array;
 }
